@@ -5,24 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/ASSETS/css/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+	<script type = "text/javascript"
+     src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="ASSETS/scripts/main.js"></script>
     <title>Turma 48</title>
   </head>
   <body>
+	<audio id="audio" src="./ASSETS/vendor/sfx.mp3"></audio>
     <div class="firework"></div>
     <div class="firework"></div>
     <div class="firework"></div>
     <header>
       <div class="title-wrapper">
         <h1 class="sweet-title">
-          <span data-text="Hokages">Hokages</span>
-          <span data-text="Na vila do Pom">Na vila do Pom</span>
+          <span data-text="Hokages na">Hokages na</span>
+          <span data-text="vila do Pom">vila do pom</span>
         </h1>
         <!-- <span class="bottom-title">Venha para a formatura da turma 48!!!</span> -->
       </div>
     </header>
     <div class="wrapper">
       <div class="lista-item">
-        <input class="trigger-input" id="faq-titulo-1" type="checkbox" />
+        <input class="trigger-input" id="faq-titulo-1" type="checkbox" onclick="sound()"/>
         <div class="trigger-wrapper">
           <label for="faq-titulo-1">
             <h2 class="faq-titulo">TURMA 48 vs POM.XML</h2>
@@ -36,7 +44,7 @@
         </div>
       </div>
       <div class="lista-item">
-        <input class="trigger-input" id="faq-titulo-3" type="checkbox" />
+        <input class="trigger-input" id="faq-titulo-3" type="checkbox" onclick="sound()"/>
         <div class="trigger-wrapper">
           <label for="faq-titulo-3">
             <h2 class="faq-titulo">FORMATURA DIA 20/05 às 00:00h</h2>
@@ -54,9 +62,8 @@
 
         <div id="demo-modal" class="modal">
           <div class="modal__content">
-            <button class="btn-hover color-9"><a href="">ZOOM</a></button>
-
-            <a href="#" class="modal__close">&times;</a>
+            <button class="btn-hover color-9">Abrir no ZOOM</button>
+			<button class="btn-hover color-9 close-modal"><a href="#" class="modal__close">X</a></button>
           </div>
         </div>
       </div>
